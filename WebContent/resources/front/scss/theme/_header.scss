@@ -1,0 +1,122 @@
+$p-color: $gray-100;
+$link-color: $gray-100;
+
+
+header{
+    background-color: $gray-300!important;
+    color: $p-color;
+    font-size:9px;
+    a{
+        color: $link-color;
+        font-size: 9px;
+        &:hover{
+            color: $p-color;
+        }
+    }
+    div{
+        img{
+            margin-right: 5px;
+        } 
+    }
+    .header-details{
+        div{
+            margin-bottom: 5px;
+            a:last-of-type{
+                margin-left: 21px;
+            }
+        }
+    }
+    .row{
+        div.col-12:first-of-type{
+            display: none;
+        }
+        div.col-12:last-of-type{
+            display: none!important;
+        }
+    } 
+    .clock{
+        padding-bottom: 3px;
+    }
+    .mobile{
+        padding-bottom: 3px;
+    }
+}
+
+
+
+.search{
+    width: 180px;
+
+    .form-control{
+        border:0;
+        box-shadow: none;
+        height: 35px;
+        line-height: 1.2rem;
+        color:$white;
+    }
+    button{
+        width: 40px;
+        line-height: 35px;
+        font-size: 16px;
+        text-align: center;
+        padding: 0;
+        border: 0;
+        box-shadow: 0;
+        background-color: $green-2;
+        color:$white;
+        border-radius: 0 2px 2px 0;
+    }
+    button{
+        span.fa{
+            margin-right: 0;
+        }
+    }
+}
+
+
+
+
+
+@media(min-width:992px){
+    header{
+        background-color: $green!important;
+        font-size:12px;
+        a{
+            font-size:12px;
+        }
+        .header-details{
+            padding-left:110px;
+            div{
+                margin-bottom: 10px;              
+            }
+        }
+
+        .row{
+            div.col-12:first-of-type{
+                display: block;
+            }
+            div.col-12:last-of-type{
+                display: flex!important;
+            }
+        }
+        button{
+            span.fa{
+                margin-right: 0;
+            }
+        }
+    }  
+
+
+
+}
+
+
+@media(min-width:1200px){
+
+    header{
+        .header-details{
+            padding-left:160px;           
+        }        
+    }
+
+}
